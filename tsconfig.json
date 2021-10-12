@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+      "skipLibCheck": true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -16,6 +17,11 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      "http": [ "./node_modules/stream-http" ],
+      "https": [ "./node_modules/https-browserify" ],
+      "buffer": [ "./node_modules/buffer" ],
+    },
     "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {

@@ -10,6 +10,10 @@ config()
   .put('discovery.wallet', 'https://fcl-discovery.onflow.org/testnet/authn') // Configure FCL's Wallet Discovery mechanism
   .put('0xProfile', '0xba1132bc08f82fe2'); // Will let us use `0xProfile` in our Cadence
 
+
+
+
+
 if (environment.production) {
   enableProdMode();
 }
